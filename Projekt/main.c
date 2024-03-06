@@ -12,6 +12,8 @@
 char *Months[12] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 char *Days[7] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
+//harmadik feladat
+void BMPcreator(int *Values, int NumValues);
 
 //Második feladat
 int Measurement(int **Values)
@@ -56,8 +58,6 @@ int Measurement(int **Values)
 }
 
 
-//harmadik feladat
-void BMPcreator(int *Values, int NumValues);
 
 // ELSŐ FELADAT
 void print_version_info()
@@ -77,8 +77,9 @@ void print_help()
     printf("  --version\tVerzió információ\n");
     printf("  --help\tSegítséghez használd a help kapcsolót\n");
 }
+
 // HARMADIK FELADAT
-// Step 2: BMPcreator function definition
+// BMPcreator function deklarációja
 void BMPcreator(int* Values, int NumValues)
 {
     unsigned long int fsize = (62 + (NumValues * NumValues));
@@ -204,7 +205,6 @@ int main(int argc, char *argv[])
 
     // EZ CSAK A TESZT MIATT VAN BENNE
     printf("Mért értékek száma: %d\n", cnt);
-    // Step 2: Call Measurement function if in send mode
     
 
     return EXIT_SUCCESS;
